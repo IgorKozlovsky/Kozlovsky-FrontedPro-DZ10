@@ -75,8 +75,11 @@ console.log(arr4Dividers.join(","));
 console.log(arr5EvenDividers.join(","));
 console.log(arr5EvenDividers.reduce((prev, curr) => (prev += curr), 0));
 // Надрукувати повну таблицю множення від 1 до 10.
+let table = "";
 for (let i = 1; i <= 10; i++) {
   for (let y = 1; y <= 10; y++) {
-    console.log(`${i} * ${y} = ${i * y}`);
+    table += `${i * y}\t`;
   }
+  table += "\n";
 }
+console.log(table);
